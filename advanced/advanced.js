@@ -1,7 +1,3 @@
-var arr = new Array();
-
-
-
 var input = document.getElementsByTagName("input");
 
 for(let i = 0; i< input.length; i++){
@@ -9,13 +5,12 @@ for(let i = 0; i< input.length; i++){
 }
 function test(i){
 	document.getElementById("input").innerHTML += input[i].value;
-	
+	console.log(document.getElementById("input").innerHTML)
 }
 
 function result() {
-
-	document.getElementById("output").value = input;
-	console.log(input);
+	var a = document.getElementById("input").innerHTML;
+	console.log(eval(a));
 }
 
 
